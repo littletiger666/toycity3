@@ -12,7 +12,7 @@ class Transaction
     @@id += 1
     product.stock -= 1
     if product.stock <= 3
-      puts "the inventory of '#{product.title}' is running low"
+      puts "Attention!! The inventory of '#{product.title}' is running low"
     end
   end
 

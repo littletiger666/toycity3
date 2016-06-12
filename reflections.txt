@@ -1,0 +1,30 @@
+How long did you spend working on this project?
+
+>> I spent about 8 hours
+
+
+What was the most rewarding challenge you conquered?
+
+>> The most rewarding one is argument. The argument name can be very confusing.
+Argument in some way, is like method name or variables. You can assign name on them.
+The difference is after assigning name: method name and variables are holding values now,
+but argument doesn't have value until someone pass a value.
+
+In other words: just pay less attention to argument name.
+
+
+What two additional features did you build? Why?
+
+>> first feature is like stock monitoring program. I want inventory manager know some urgent
+stock information so he/she can make a quicker response.
+
+second feature is total_sales calculator. Total-sales is a very important status. I think my
+boss will be happy to see this number raise every day.
+
+
+Where do you still have room to grow?
+
+>> When I'm doing this project, I met a lot of problems. At the end I understand most of them, but
+there are few of them I don't understand.(I can still solve those problems by using some "magic" code
+I don't fully understand)
+Do I need to fully understand every line of code or I can just use it as long as the result is expected?
