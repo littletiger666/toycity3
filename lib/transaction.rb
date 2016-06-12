@@ -5,14 +5,18 @@ class Transaction
   @@transactions = []
 
   def initialize (customer, product)
-    @customer = customer
-    @product = product
-    @id = @@id
-    add_to_transaction
-    @@id += 1
-    product.stock -= 1
-    if product.stock <= 3
-      puts "Attention!! The inventory of '#{product.title}' is running low"
+    unless product.in_stock?
+      raise OutOfStockError, "#{product.title} is out of stock"
+    else
+      @customer = customer
+      @product = product
+      @id = @@id
+      add_to_transaction
+      @@id += 1
+      product.stock -= 1
+      if product.stock <= 3
+        puts "Attention!! The inventory of '#{product.title}' is running low"
+      end
     end
   end
 

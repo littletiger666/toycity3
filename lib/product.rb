@@ -16,16 +16,11 @@ class Product
   end
 
   def self.find_by_title name
-    item = @@products.select {|product| product.title == name}
-    item[0]
+    @@products.find {|product| product.title == name}
   end
 
   def in_stock?
-    if self.stock > 0
-      return true
-    else
-      return false
-    end
+    @stock > 0
   end
 
   def self.in_stock

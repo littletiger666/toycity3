@@ -18,11 +18,7 @@ class Customer
   end
 
   def purchase product
-    if product.stock == 0
-      raise OutOfStockError, "#{product.title} is out of stock"
-    else
-      Transaction.new self, product
-    end
+    Transaction.new self, product
   end
 
   private
@@ -32,7 +28,7 @@ class Customer
     unless c_name.include? self.name
       @@customers << self
     else
-      raise DuplicateProductError, "#{self.name} already exists"
+      raise DuplicateCustomerError, "#{self.name} already exists"
     end
   end
 end
